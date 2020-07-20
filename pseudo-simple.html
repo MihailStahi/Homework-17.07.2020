@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS PSEUDO ELEMENTS</title>
+    <style>
+        body{
+            background-color: #333;
+        }
+        form{
+            background-color: #222;
+            padding: 20px;
+        }
+        input{
+            padding: 10px;
+            outline: none;
+            border: 1px solid white;
+            transform: translateY(-3.5px)
+        }
+        input:focus{
+            border-color: orange;
+            width: 400px;
+        }
+        button{
+            padding: 5px;
+background-color: transparent;
+border-color: transparent;
+outline: none;
+
+        }
+        img{
+            border: 1px solid transparent;
+            border-radius: 100%;
+        }
+        img:hover{
+            border: 1px solid white ;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label>
+            <button><img src="https://icons.iconarchive.com/icons/martz90/circle/16/mic-icon.png"></button>
+            <input type="text" placeholder="search here">
+        </label>
+    </form>
+</body>
+</html>

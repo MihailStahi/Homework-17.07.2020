@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS IMAGE EFFECTS</title>
+    <style>
+        body{
+            background-color: #333;
+        }
+        p{
+            /* background-color: green; */
+            text-align: center;
+            padding-top: 77px;
+        }
+        img{
+            border: 5px solid #ccc;
+            padding: 15px;
+            background-color: #999;
+            transition: 0.5s;
+
+transform: rotate(-360deg);
+transition: 0.5s;
+        }
+        img:hover{
+            border-color: white;
+            background-color: #aaa;
+            transform: rotate(0deg);
+
+        }
+        small{
+            color: #ddd;
+  font-size: 70px;
+        }
+        small:hover{
+            color: white;
+            
+        }
+        small:before{
+            content: "[";
+            color: orange;
+            /* background-color: green; */
+        }
+        small::after{
+            content: "]";
+            color: orange;
+            transition: 0.5s    ;
+            /* background-color: green; */
+        }
+        small:hover::before{
+            padding: 20px;
+        }
+        small:hover::after{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <small>IMAGE EFECTS</small>
+        <BR>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQBQPl7R44bIqAbudSDbrGDsm82r0g5NpytNg&usqp=CAU" alt="">
+    </p>
+</body>
+</html>
